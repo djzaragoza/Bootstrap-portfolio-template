@@ -49,8 +49,18 @@ body {
    color: #1EBBA3;
 }
 
-/*-- Remove Button Outline --*/
+.custom-toggler-icon {
+   color: white;
+   font-size: 1.6rem;
+}
 
+/*-- Remove Button Outline --*/
+button:focus,
+a:focus {
+   outline: 0;
+   -webkit-appearance: none;
+   box-shadow: none;
+}
 
 /*============= LANDING PAGE =============*/
 
