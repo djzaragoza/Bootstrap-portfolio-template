@@ -54,12 +54,23 @@ body {
    font-size: 1.6rem;
 }
 
+.navbar.solid {
+   background: rgba (0, 0, 0, .7) !important;
+}
+
 /*-- Remove Button Outline --*/
 button:focus,
 a:focus {
    outline: 0;
    -webkit-appearance: none;
    box-shadow: none;
+   transition: all .6s ease;
+}
+
+button,
+a,
+a.btn {
+   transition: all .6s ease;
 }
 
 /*============= LANDING PAGE =============*/
