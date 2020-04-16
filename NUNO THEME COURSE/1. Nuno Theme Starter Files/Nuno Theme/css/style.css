@@ -55,7 +55,13 @@ body {
 }
 
 .navbar.solid {
-   background: rgba (0, 0, 0, .7) !important;
+   background: rgba(0, 0, 0, .7) !important;
+   transition: background-color .5s ease;
+}
+
+.navbar.solid-toggle {
+   background: rgba(0, 0, 0, .7) !important;
+   transition: background-color .5s ease;
 }
 
 /*-- Remove Button Outline --*/

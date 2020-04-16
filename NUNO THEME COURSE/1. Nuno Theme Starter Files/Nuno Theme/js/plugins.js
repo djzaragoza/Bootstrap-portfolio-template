@@ -1,7 +1,23 @@
 /*========== NAVBAR TRANSPARENT TO SOLID ==========*/
 
-/*========== ADD SOLID CLASS TO NAVBAR WHEN TOGGLED ==========*/
+function checkScroll() {
+  if ($(window).scrollTop() >= 300) {
+    $(".navbar").addClass("solid");
+  } else {
+    $(".navbar").removeClass("solid");
+  }
+}
 
+/*========== ADD SOLID CLASS TO NAVBAR WHEN TOGGLED ==========*/
+$(document).ready(function () {
+  checkScroll();
+  $(window).scroll(checkScroll);
+  $(".navbar-toggler").click(function () {
+    if ($(window).scrollTop() <= 300) {
+      $("nav.navbar").toggleClass("solid-toggle");
+    }
+  });
+});
 /*========== CLOSE MOBILE MENU ON CLICK & SMOOTH SCROLL TO LINK ==========*/
 
 /*========== BOUNCING DOWN ARROW ==========*/
