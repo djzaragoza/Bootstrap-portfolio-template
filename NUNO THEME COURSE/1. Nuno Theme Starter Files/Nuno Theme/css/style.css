@@ -82,6 +82,12 @@ a.btn {
 /*============= LANDING PAGE =============*/
 
 /*--- Fixed Landing Page Section --*/
+.home-inner {
+   background-image: url('/nuno theme course/1. nuno theme starter files/nuno theme/img/computers.jpg');
+   position: fixed;
+   height: 100%;
+   width: 100%;
+}
 
 /*-- Landing Page Caption --*/
 
