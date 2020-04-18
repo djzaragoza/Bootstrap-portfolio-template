@@ -36,8 +36,9 @@ $(document).on("click", 'a[href^="#"]', function (event) {
   // @ts-ignore
   $("#navbarResponsive").removeClass("show");
 
-  // @ts-ignore
-  $("nav.navbar").removeClass("solid-toggle");
+  setTimeout(function () {
+    $("nav.navbar").removeClass("solid-toggle");
+  }, 300);
 
   // @ts-ignore
   $("html, body").animate(
@@ -45,7 +46,7 @@ $(document).on("click", 'a[href^="#"]', function (event) {
       // @ts-ignore
       scrollTop: $($.attr(this, "href")).offset().top,
     },
-    3000
+    1000
   );
 });
 
