@@ -82,6 +82,23 @@ a.btn {
 /*============= LANDING PAGE =============*/
 
 /*--- Fixed Landing Page Section --*/
+.landing {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   display: table;
+   z-index: -1;
+}
+
+.home-wrap {
+   clip: rect(0, auto, auto, 0);
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+}
+
 .home-inner {
    background-image: url('/nuno theme course/1. nuno theme starter files/nuno theme/img/computers.jpg');
    position: fixed;
@@ -92,9 +109,18 @@ a.btn {
    -webkit-transform: translateZ(0);
    transform: translateZ(0);
    will-change: transform;
+   display: table;
 }
 
 /*-- Landing Page Caption --*/
+.caption {
+   z-index: 1;
+   position: absolute;
+   top: 18%;
+   width: 100%;
+   max-width: 100%;
+
+}
 
 /*-- Bouncing Down Arrow --*/
 

@@ -12,15 +12,17 @@
 
 /*-- TURN OFF WAYPOINTS/ANIMATION ON MOBILE --*
 @media (max-width: 767px) {
-.animated, .os-animation {
-	-webkit-animation: none!important;
-	-moz-animation: none!important;
-	-o-animation: none!important;
-	animation: none!important;
-	opacity: 1!important;
-	-webkit-animation-delay: none !important;
-	-moz-animation-delay: none !important;
-	animation-delay: none !important;
+
+	.animated,
+	.os-animation {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		animation: none !important;
+		opacity: 1 !important;
+		-webkit-animation-delay: none !important;
+		-moz-animation-delay: none !important;
+		animation-delay: none !important;
 	}
 }
 
@@ -32,11 +34,12 @@
 
 
 /*============= WAYPOINTS (DON'T CHANGE CSS BELOW) =============*/
-.os-animation{
+.os-animation {
 	opacity: 0;
-	margin: 0!important;
+	margin: 0 !important;
 	max-width: 100%;
 }
+
 .os-animation.animated {
 	opacity: 1;
 }
